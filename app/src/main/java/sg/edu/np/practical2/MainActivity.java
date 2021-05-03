@@ -17,14 +17,13 @@ public class MainActivity extends AppCompatActivity {
         Button fButton = findViewById(R.id.Followbtn);
         fButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-                String fText = fButton.getText().toString();
                 if (user1.isFollowed()) {
                     fButton.setText("Unfollow");
                     user1.setFollowed(false);
                 }
                 else {
                     fButton.setText("Follow");
-                    user1.setFollowed(false);
+                    user1.setFollowed(true);
                 }
 
             }
